@@ -1,0 +1,210 @@
+/*
+Theme Name: Divi Child
+Theme URI: https://wordjack.com/
+Description: A custom child theme for Divi.
+Author: Virson Ebillo
+Author URI: https://virson.wordpress.com/
+Template: Divi
+Version: 1.2.0
+*/
+
+input[type=text], input[type=tel], input[type=email], input[type=password], input.text, input.title, textarea, select {
+	max-width: 100%;
+}
+.wpcf7-text, .wpcf7-email, .wpcf7-tel, .wpcf7-textarea {
+	max-width: 100%;
+	padding: 5px!important;
+    border: 1px solid rgba(0, 0, 0, 0.25)!important;
+    border-radius: 3px;
+}
+.wpcf7-form input[type="submit"]{
+	cursor: pointer;
+}
+.wpcf7-form input[type="submit"]:hover {
+	padding: 0.3em 1em;
+}
+#searchsubmit {
+	cursor: pointer;
+}
+.main_title {
+    margin-bottom: 0;
+}
+#et-info-email {
+	display: none;
+}
+#main-header #et_mobile_nav_menu {
+	margin-top: 0;
+}
+#main-header .mobile_nav {
+	background: transparent;
+	background-color: rgba(0, 0, 0, 0)!important;
+}
+.mobile_nav .select_page {
+	opacity: 0;
+	color: transparent!important;
+}
+.nav li ul {
+    width: 260px;
+}
+#top-menu li li {
+    padding: 0 10px;
+}
+#top-menu li li a {
+    width: 240px;
+    padding: 6px 10px;
+}
+.et_overlay:before, .et_pb_bg_layout_light .et_pb_more_button, .et_pb_bg_layout_light .et_pb_newsletter_button, .et_pb_bg_layout_light .et_pb_promo_button, .et_pb_bg_layout_light.et_pb_module.et_pb_button, .et_pb_contact_submit, .et_pb_filterable_portfolio .et_pb_portfolio_filters li a.active, .et_pb_filterable_portfolio .et_pb_portofolio_pagination ul li a.active, .et_pb_gallery .et_pb_gallery_pagination ul li a.active, .et_pb_member_social_links a:hover, .et_pb_pricing li a, .et_pb_pricing_table_button, .et_pb_sum{
+	color:#ffffff;
+}
+header .header_text {
+    position: relative;
+    z-index: 99;
+}
+header .header_text_clear {
+	clear: both;
+}
+.et_header_style_split header #et-top-navigation .header_text {
+	display: block;
+	padding: 10px 0;
+}
+.et_header_style_split header .header_text {
+	display: none;
+}
+.et_header_style_left header .header_text {
+	float: right;
+	padding-top: 10px;
+	display: block;
+}
+.et_header_style_left header #et-top-navigation .header_text {
+	display: none;
+}
+.et_header_style_centered header .header_text {
+	float: none;
+	padding: 10px 0;
+	display: block;
+}
+.et_header_style_centered header #et-top-navigation .header_text {
+	display: none;
+}
+header .dc_tagline {
+    position: absolute;
+    bottom: 0;
+}
+.et_header_style_centered header .dc_tagline {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+	padding-top: 10px;
+}
+.et_header_style_centered header #et-top-navigation .dc_tagline {
+	display: none;
+}
+.et_header_style_split header .dc_tagline {
+	display: none;
+}
+.et_header_style_split header #et-top-navigation .dc_tagline {
+    display: block;
+    position: relative;
+	padding-top: 10px;
+}
+.et_header_style_left header #et-top-navigation .dc_tagline {
+	display: none;
+}
+#dc_privacy_policy {
+	float: right;
+}
+.et_header_style_left.dc_has_tagline .logo_container {
+	height: calc(100% - 20px);
+}
+.dc_breadcrumbs {
+    padding: 10px 0;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: #f5f5f5;
+}
+.dc_cat_information {
+	border-bottom: 1px solid #eeeeee;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.archive article {
+    padding: 10px;
+    border: 1px solid #dddddd;
+	border-radius: 3px;
+}
+.archive #left-area article .post-meta {
+	padding-bottom: 0;
+}
+.archive .has-post-thumbnail .dc_post_item_left {
+	width: 100%;
+	max-width: 300px;
+	display: inline-block;
+	margin-right: 15px;
+}
+.archive .has-post-thumbnail .dc_post_item_left .entry-featured-image-url {
+	margin-bottom: 0;
+}
+.archive .has-post-thumbnail .dc_post_item_right {
+    width: calc(100% - 325px);
+    display: inline-block;
+    vertical-align: top;
+}
+.archive .dc_readmore_archive {
+	margin-top: 20px;
+}
+/*
+Begin CoverPic styling
+*/
+#dc_coverpic_wrapper {
+	position: relative;
+}
+#dc_coverpic_image {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-position: center center!important;
+	background-repeat: no-repeat!important;
+    background-size: cover!important;
+}
+#dc_coverpic_text_wrapper {
+    z-index: 99;
+    position: relative;
+}
+#dc_coverpic_text_area_flex {
+	display: flex;
+}
+#dc_text_box {
+	width: 100%;
+	padding: 15px 0;
+}
+#dc_text_box h1,
+#dc_text_box h2 {
+	word-wrap: break-word;
+}
+/*
+End of CoverPic styling
+*/
+@media (max-width: 773px) {
+	.archive .has-post-thumbnail .dc_post_item_left {
+		max-width: 150px;
+	}
+	.archive .has-post-thumbnail .dc_post_item_right {
+		width: calc(100% - 175px);
+	}
+}
+@media (max-width: 480px) {
+	.dc_cat_information {
+		text-align: center;
+	}
+	.archive .has-post-thumbnail .dc_post_item_left {
+		max-width: 100%;
+		text-align: center;
+	}
+	.archive .has-post-thumbnail .dc_post_item_right {
+		width: 100%;
+		text-align: center;
+		padding: 15px 0;
+	}
+}

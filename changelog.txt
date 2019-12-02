@@ -1,0 +1,116 @@
+Version 1.2.0 (September 6, 2018)
+Code Structure:
+- Reworked the whole child theme code structure into Object-Oriented Programming (OOP).
+- Reworked slightly the CoverPic admin js file.
+- Reworked the CoverPic front-end styling. Now robust and uses flex display property.
+
+Features:
+- Added CoverPic settings to all kinds of public post types.
+- Added CoverPic settings to all hierarchical taxonomy object types (Aka. categories).
+- Added CodeMirror instances to the Child Theme Options page.
+- Added CodeMirror instances to taxonomy term pages (Aka. categories). Note that this also applies to custom post types.
+- Added the HTML Entity (he ver 1.1.1) econding/decoding Javascript libray for converting strings with special characters.
+- Added simple security isolations to certain code files.
+- Added an option to hide the "Read More" buttons on archive pages.
+- Added support to SVG file uploads.
+- Added support for integrating Divi button stylesheet to Contact Form 7 submit button.
+- Added an Option to the CoverPic Settings to show or hide the CoverPic Title and Subtitle text contents.
+
+Updates:
+- Reworked the render display of the following contents to add support to the latest Divi 3.12.2:
+a. Header Text
+b. Header Tagline
+c. Social Icons
+d. Privacy Policy Link
+e. Archive Pages
+f. Child Theme Options page stylesheet
+g. Breadcrumbs
+- Updated the index.php page template to fully support Divi 3.12.2.
+- Updated the CoverPic export and import functionality to not include the Tile and Sub Title when importing.
+
+Bug Fixes:
+- Fixed a bug on CoverPic layout when applied with Divi's Box Layout style.
+- Fixed a bug on single/double quote characters including special characters for both the CoverPic Title and Sub-Title fields that causes a cut-off of text contents due to incorrect string encoding/decoding during saving.
+- Fixed a bug on default CoverPic settings being restored when saving/updating the page manually (non Ajax).
+
+Removed Features:
+- Removed the old CodeMirror library prior to Divi's added CodeMirror library Update.
+- Removed the old Blog Title, Blog Sub Title and Blog Description from the Child Theme Options page.
+- Removed the Menu Overlay settings in the CoverPic metabox settings.
+- Removed the following old theme templates:
+a. header.php
+b. page.php
+c. single.php
+d. project.php
+e. page-blank.php
+f. footer.php
+g. index.php
+h. sidebar.php
+
+##############################################################################################
+
+Version 1.1.6 (September 1, 2017)
+- Added Ajax saving feature to CoverPic Settings and Breadcrumbs Toggle Option for both the Page/Post editor and category (taxonomy) editor for an intuitive user experience.
+- Added migration tool/code for fixing new markup for image src url path.
+- Added the CodeMirror library to display a rich code editor experience on Divi's Custom CSS setting.
+- Added allowed HTML tags (div, sup, sub, span, em, br) to both the Title and Sub title fields.
+- Added extra social icons to the main Divi Theme Settings page.
+- Changed the name from Banner Settings to CoverPic settings.
+- Changed the DIVI_CHILD_ABS_PATH constant to DIVI_CHILD_URL_PATH and placed with a get_stylesheet_directory_uri() method rather than the defined static string.
+- Social icons in the top bar header area will now open in a new tab.
+- Phone number in the top bar header area will now open in a new tab.
+- Fixed and corrected the default settings bug.
+- Fixed Parent and Child stylesheet to load faster than the previous Child theme versions where the old @import in the child theme's css is now replaced with the correct stylesheet enqueue method.
+- Fixed a bug on hex color code that will malfunction whenever a hash tag (#) is placed as value.
+- Fixed the issue on IMG src url path being unable to change when the site is migrated to another domain or when applied with SSL encryption.
+- Fixed a bug on front-end page layout for pages/posts applied with the CoverPic when logged in to Wordpress.
+- Fixed a bug in CoverPic layout issue in Safari that will occur in some cases where the HTML document tends to be loaded indefinitely.
+- Fixed the issue on CoverPic that does not display properly when applied with caching plugins.
+- Fixed some issue on CoverPic layout display when resizing the browser window.
+- Fixed an issue where the CoverPic settings will revert back to default settings prior to ajax saving.
+- Fixed an issue where the main CSS files are loaded twice due to incorrect parent CSS tag during enqueue.
+
+Version 1.1.5 (June 19, 2017)
+- Added the Banner settings in both the post and page editor window.
+- Added the new banner layout in both page and post front-end layout.
+- Added Breadcrumbs NavXT settings to both the page and post editor window.
+- Added clickable phone number with tel tag attribute to the Divi's phone number in the top header.
+- Social icons in the Divi's top header will now open in a new tab.
+- Fixed the spacing for the Blog title, sub title, and blog description from the blog feed listed below it.
+- Removed the hard coded image thumbnail sizes that was not used.
+- Removed the hard coded excerpt length that was not used.
+
+Version 1.1.4 (April 12, 2017)
+- Integrated the microfomats to address Google's Structured Data Fetching.
+
+Version 1.1.3 (August 19, 2016)
+- Added custom menu "Top Menu" that can be viwed right below the primary navigation menu.
+- Added PHP consntant for the theme settings absolute url path.
+- Added script for the Top Menu that will deal with mobile and browser window resize.
+- Added Change log button that can be viewed on the child page settings.
+- Added child theme version in the settings page.
+- Added info message for the Hide Tagline option.
+- Added Wordpress admin notication message.
+- Applied font-weight to the breadcrumbs by NavXT.
+- Re-coded format info for the copyright text.
+- Removed old admin notification message.
+
+Version 1.1.2 (April 4, 2016)
+- Re-vamped style.css and main theme options for new layout.
+- Added custom field "Privacy Policy" that will accept links to be displayed at the footer area.
+
+Version 1.1.1.5
+- Re-vamped style.css applying spaces to post meta description on single posts.
+
+Version 1.1.1
+- Removed the "Powered By Wordjack" copyright text.
+
+Version 1.1
+- Added read more button in the archive pages (blog).
+- Set post thumbnail on archive pages to avoid overflow display.
+- Changed the hover color on default form submit button.
+- Fixed extra padding/margin on single post when a photo is added.
+- Bumped style.css to version 1.1 from the old version 2.1.
+
+Version 1.0
+- Initial Updated Version

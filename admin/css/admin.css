@@ -1,0 +1,82 @@
+.dc_option_settings .theme_version {
+	color: #ff0000;
+}
+.dc_option_settings .change_log a {
+	background: #00a0d2;
+	border-color: #0073aa;
+	-webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+	-moz-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+	-ms-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+	color: #fff;
+	text-decoration: none;
+	padding: 1px 5px;
+	border-radius: 3px;
+	position: relative;
+	top: -4px;
+	border: 1px solid rgba(255, 255, 255, 0);
+	font-size: 11px;
+}
+.dc_form_wrapper {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 3px;
+	border: 1px solid #dddddd;
+}
+.dc_option_settings .description {
+	display: block;
+	margin-top: 5px;
+}
+.dc_option_settings .dc_shortcode_info {
+	display: inline-block;
+    user-select: all;
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    background-color: #eeeeee;
+    padding: 3px 7px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 1;
+}
+.dc_option_settings label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #F44336;
+}
+.dc_option_settings ul li {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+.dc_option_settings ul li .CodeMirror {
+    height: 200px;
+}
+.dc_option_settings ul li:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+    border-bottom: none;
+}
+.dc_option_settings span.enabled {
+    color: #4CAF50;
+    font-weight: 600;
+}
+.dc_option_settings span.disabled {
+    color: #607D8B;
+    font-weight: 600;
+}
+.dc_option_settings span.select_all_elem {
+    user-select: all;
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    background-color: #fff59a;
+    border: 1px solid #bbbbbb;
+    display: inline-block;
+    line-height: 1;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
